@@ -1,0 +1,40 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-top: 64px;
+  }
+  .popularBox {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    white-space: nowrap;
+    flex-direction: row;
+  }
+  .popular p {
+    text-align: center;
+    font-weight: 600;
+    padding-top: 24px;
+  }
+  .popularItem img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .popularItem img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .popularTitle p {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    text-align: left;
+  }
+  
+  @media (max-width: 992px) {
+    .popularBox {
+      flex-wrap: wrap;
+    }
+    .popularItem {
+      width: 153px;
+    }
+  }
